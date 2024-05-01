@@ -1,0 +1,371 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+/*********************NAVIGACIJA***************************/
+  
+header{
+  background-color: black;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+#hamburger{
+  position: absolute;
+  top: 3%;
+  right: 0;
+  padding: 1rem;
+  display: none;
+
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.nav li{
+ list-style-type: none;
+  padding: 2rem;
+}
+
+.nav li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav li a:hover{
+  text-shadow: 3px 3px 8px white;
+}
+
+
+/*********************NAVIGACIJA KRAJ***************************/
+
+
+
+
+.naslov{
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+.podnaslov{
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+
+}
+.text{
+  font-size:1.5rem;
+  line-height: 2.5rem;
+  word-spacing: 0.3rem;
+  text-align: justify;
+}
+
+/*******************DEKORATIVNI NASLOV********************/
+
+.decor-container{
+    background-image: url("../img/leafs-wall.jpg");
+    background-size: cover;
+    position: relative; 
+    height: 30rem; 
+}
+
+.decor-naslov{
+    background-color: white;
+    color: black;
+    font-size: 7vw;
+  font-weight: 800;
+  margin: 0 auto; 
+  padding: 10px;
+  width: 70%;
+  text-align: center; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  mix-blend-mode: screen; 
+}
+
+.decor-text{
+
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 5vw; 
+  font-weight: bold;
+  margin: 0 auto; 
+  width: 50%;
+  text-align: center; 
+  position: absolute; 
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+
+}
+
+/*************************KARTICE***********************************/
+.kartice-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.kartica{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  border-radius: 3rem;
+  background-color: #166254;
+  margin: 2rem;
+  color: white;
+  font-weight: 300;
+}
+
+img{
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  position: relative;
+  z-index: 1;
+
+  
+}
+/*******************DEKORACIJA KARTICA...***************************/
+.card-decor{
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  position: relative;
+  z-index: 1;
+}
+.card-decor::after{
+  content:attr(data-title);
+  background-color: rgba(2, 51, 32, 0.751);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  font-weight: 600;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  
+
+}
+
+.card-decor:hover::after{
+  content:"";
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+
+
+
+.card-naslov{
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  background-color: #125145;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.kartica p{
+  padding: 2rem 3rem;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  padding: 2rem 0rem;
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+
+}
+footer ul li a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-div{
+  text-transform: uppercase;
+  text-align: left;
+}
+.footer-div p a i{
+  margin-right: 3%;
+}
+.footer-div p a{
+  color: white;
+  text-decoration: none;
+}
+
+.socials p {
+  padding: 0.7rem;
+}
+
+.kontakt-info p{
+  padding: 0.7rem;
+
+}
+
+.stranice{
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+.stranice ul li {
+  padding: 1.01rem;
+}
+
+
+
+
+/**************************MEDIA QUERY******************************/
+
+
+@media screen and (max-width: 1200px) {
+  /*********************NAVIGACIJA***************************/
+header{
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  margin: 0 ;
+  position: absolute;
+  top: -500%;
+  z-index: 3;
+  background-color: black;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+  transition: top 0.5s ease;
+
+}
+
+.prikazi {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  z-index: 3;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+
+#hamburger{
+  position: absolute;
+  top: 3%;
+  z-index: 4 ;
+  right: 0;
+  padding: 1rem;
+  display: block;
+
+}
+
+
+}
+
+@media screen and (max-width:800px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 720px){
+
+  /*******************DEKORATIVNI NASLOV********************/
+
+.decor-container{
+  height: 15rem; 
+}
+
+
+/*************************KARTICE***********************************/
+.kartice-container{
+padding: 5rem 0rem;
+}
+
+/*******************DEKORACIJA KARTICA...***************************/
+
+.card-decor::after{
+  content:attr(data-title);
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.card-naslov{
+  font-size: 1.2rem;
+}
+
+.kartica p{
+  padding: 1rem 1.5rem;
+}
+
+
+
+
+}

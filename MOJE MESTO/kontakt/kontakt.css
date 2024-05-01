@@ -1,0 +1,400 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body{
+    background-color: #16625491;
+
+  }
+
+/*********************NAVIGACIJA***************************/
+  
+header{
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+  }
+  #hamburger{
+    position: absolute;
+    top: 3%;
+    right: 0;
+    padding: 1rem;
+    display: none;
+
+  }
+ 
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+.nav li{
+   list-style-type: none;
+    padding: 2rem;
+}
+
+.nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav li a:hover{
+    text-shadow: 3px 3px 8px white;
+}
+
+
+  /*********************NAVIGACIJA KRAJ***************************/
+
+
+.naslov{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.text{
+   
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+/********************************************************/
+.kontakt-container{
+    display: flex;
+    flex-direction: row;
+   margin-top: 5%;
+    width: 100%;
+
+    height: 70vh;
+}
+.form-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: none;
+
+}
+
+form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #166254;
+    height: 60%;
+    padding:9rem 2rem;
+    border-radius: 1rem;
+    
+}
+
+label{
+    font-size: 1.5rem;
+    padding: 0.2rem 0rem;
+    color: white;
+}
+input{
+    height: 4vh;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(234, 234, 234);
+}
+
+small{
+    color: rgb(209, 209, 209);
+    padding-bottom: 0.5rem;
+}
+
+.tooltip {
+    display: inline-block;
+    background-color: rgb(152, 0, 48);
+    color: white;
+    padding: 5px;
+    border-radius: 0.5rem;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+.potvrdi{
+    background-color: black;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1%;
+    transition: background-color 0.3s ease;
+
+}
+.potvrdi:hover{
+    background-color: rgb(77, 153, 128);
+    color: black;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.635);
+}
+
+.uspesna-poruka{
+    background-color: #37cf88;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1%;
+
+
+}
+
+.ponisti{
+    background-color: #dadada3d;
+    border: 3px solid black;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.ponisti:hover{
+    background-color: rgb(156, 24, 66);
+    color: black;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.635);
+    border: 0px;
+}
+
+.mapa-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: right;
+
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-container p a {
+    color: black;
+    text-decoration: none;
+}
+.mapa{
+    width: 60%;
+    height: 50%;
+    border-radius: 2rem;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+}
+footer{
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+footer ul {
+    list-style-type: none;
+
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-div{
+    text-transform: uppercase;
+    text-align: left;
+}
+.footer-div p a i{
+    margin-right: 3%;
+}
+.footer-div p a{
+    color: white;
+    text-decoration: none;
+}
+
+.socials p {
+    padding: 0.7rem;
+}
+
+.kontakt-info p{
+    padding: 0.7rem;
+
+}
+
+.stranice{
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+.stranice ul li {
+    padding: 1.01rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /*********************NAVIGACIJA***************************/
+  header{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    margin: 0 ;
+    position: absolute;
+    top: -500%;
+    z-index: 3;
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    transition: top 0.5s ease;
+
+  }
+
+  .prikazi {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    z-index: 3;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+#hamburger{
+    position: absolute;
+    top: 3%;
+    z-index: 4 ;
+    right: 0;
+    padding: 1rem;
+    display: block;
+
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .kontakt-container {
+      flex-direction: column;
+   
+    }
+    .form-container{
+        width: 100%;
+    }
+    .mapa-container{
+        width: 100%;
+        flex-direction: column;
+
+        
+    }
+    .mapa-container .text-container{
+        border-top: 2px solid rgb(17, 86, 64);
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+     .kontakt-container {
+      height: 200vh;
+   
+    }
+   
+
+  }
+
+  @media screen and (max-width:800px){
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+  
+  }
+
+  
+@media screen and (max-width: 650px) {
+  
+    .mapa-container .text-container .text{
+      font-size: 1.2rem;
+      letter-spacing: 0.08rem;
+    }
+
+
+.mapa{
+   
+    width: 90%;
+    max-width: 100%;
+    height: 50%;
+    border-radius: 0rem;
+}
+.map{
+   
+    border-radius: 0rem;
+
+}
+   
+form{
+    width: 70%;
+    padding:3rem 2rem;
+    
+}
+
+label{
+    font-size: 1.2rem;
+}
+input{
+    font-size: 0.9rem;
+}
+
+.potvrdi{
+    font-size: 1rem;
+}
+.ponisti{
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+   
+
+  }

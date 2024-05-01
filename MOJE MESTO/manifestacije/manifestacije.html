@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="manifestacije.css">
+    <script src="../js/script.js" ></script>
+    <script src="../js/all.min.js"></script>
+    <title>Lučani - Manifestacije</title>
+</head>
+<body>
+
+  <!-----------------------------NAVIGACIJA--------------------->
+  <header>
+    <i class="fa-solid fa-bars fa-2xl"   id="hamburger"  onclick="hamburgerMenu()" style="color: #ffffff;"></i>
+
+    
+        <div id="navigacija" class="nav">
+            <li><a href="../pocetna/index.html">Početna</a></li>
+            <li><a href="../destinacije/destinacije.html">Destinacije</a></li>
+            <li><a href="../manifestacije/manifestacije.html">Manifestacije</a></li>
+            <li><a href="../gallery/gallery.html">Galerija</a></li>
+            <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+        </div>
+
+
+</header>
+
+<div class="decor-container">
+
+
+    <div class="decor-naslov"> MANIFESTACIJE</div>
+
+</div>
+<!------------------------KARTICE------------------------>
+<div class="kartice-container">
+       
+    <div class="kartica">
+        <div class="card-decor" data-title="L">
+        <img src="../img/truba.jpg" alt="">
+    </div>
+        <h3 class="card-naslov" >sabor trubača</h3>
+        <p class="text" >Prve trube u Dragačevu pojavile su se krajem XIX i početkom XX veka. Sa brojnih ratnih uporišta i borbi za oslobođenje Srbije, hrabri i odvažni Dragačevci vratiše se kao pravi junaci. Poneki od njih, svirajući u vojnim orkestrima, ponesoše sa sobom trubu za  uspomenu i sećanje na vojničke dane. </p>
+    </div>
+    <div class="kartica">
+        <div class="card-decor" data-title="U">
+        <img src="../img/hajduk.jpg" alt="">
+</div>
+        <h3 class="card-naslov"  >hajduk fest</h3>
+
+        <p class="text">Manifestacija gastronomskog tipa „Hajduk fest“ organizuje se u junu ili julu mesecu svake godine na prostoru sportskog centra u Guči, sa ciljem da takmičenje u pripremi hajdučkog ćevapa postane tradicionalan događaj. 
+
+            Ovaj specijalitet je tipičan za dragačevski kraj i ne priprema se ni u jednom delu Srbije. </p>
+    </div>
+    <div class="kartica">
+        <div class="card-decor" data-title="Č">
+        <img src="../img/kum.jpg" alt="">
+    </div>
+        <h3 class="card-naslov" >sabor kumova</h3>
+
+        <p class="text">U prijatnom seoskom ambijentu najbrojnijeg dragačevskog sela – Goračići, svake godine u maju održava se manifestacija Sabor kumova. Prvobitno je zamišljeno da se događaj organizuje u vidu nadmetanja kumova u šahu, a kasnije je program obogaćen i drugim takmičarskim igrama.</p>
+    </div>
+  
+
+ 
+    <div class="kartica">
+        <div class="card-decor" data-title="A" >
+        <img src="../img/raspevano.jpg" alt="">
+    </div>
+        <h3 class="card-naslov" >raspevano dragačevo</h3>
+
+        <p class="text">Smotra narodnih običaja „Raspevano Dragačevo“ postoji sa podjednako dugom tradicijom kao i Dragačevski sabor trubača. Nekada su se u dragačevskim selima zimi održavala takmičenja pevačkih grupa, dok je završna smotra organizovana na Treći Vaskrs u Guči, kao finalno nadmetanje najboljih. </p>
+    </div>
+    <div class="kartica">
+        <div class="card-decor" data-title="N" >
+        <img src="../img/kotlic.jpg" alt="">
+        </div>
+        <h3 class="card-naslov" >dragačevski kotlić</h3>
+
+        <p class="text">Manifestacija pod nazivom Dragačevski kotlić, prvi put je održana u Lučanima. Učesnici su imali slobodu izbora šta će da pripremaju u kotliću pa su se neki odlučili za gulaš dok je drugima riblja čorba bila primamljivija.
+
+            Organizacijom ove manifestacije, jedan deo prazničnog programa preseljen je  u Lučane.
+            
+          </p>
+    </div>
+    <div class="kartica">
+        <div class="card-decor" data-title="I" >
+        <img src="../img/rok.jpg" alt="">
+    </div>
+        <h3 class="card-naslov" >rock&roll sabor</h3>
+
+        <p class="text"> Ljubitelji ove vrste muzike okupljaju se na već dobro poznatom mestu, na platou Doma kulture u Lučanima
+            uz zvuke najpopularnijih, domaćih rock bendova. Do sada su se na ovoj manifestaciji predstavili bendovi poput Goblina, Dza ili Bu, Kristala, Samostalnih referenata, Eyesburn, Bjesova…</p>
+    </div>
+
+    </div>
+    <footer>
+    
+        <div class="socials footer-div">
+            <h3>Društvene mreže</h3>
+          <p><a href="#"><i class="fa-brands fa-square-instagram fa-lg" style="color: #ffffff;"></i> poseti_lucane</a></p>
+           
+          <p><a href="#"><i class="fa-brands fa-square-facebook fa-lg" style="color: #ffffff;"></i> Lucani opstina</a> </p>
+          <p> <a href="#"> <i class="fa-brands fa-square-twitter fa-lg" style="color: #ffffff;"></i>lucani</a></p>  
+            
+        </div>
+        <div class="stranice footer-div">
+            <h3>Najčešće Posećene Stranice</h3>
+              <ul id="mostVisitedList"></ul>
+        </div>
+       
+        <div class="kontakt-info footer-div">
+            <h3>Kontakt informacije</h3>
+           <p> <a href="https://www.google.com/maps/place/%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5+%D0%B0%D1%80%D0%BC%D0%B8%D1%98%D0%B5+5,+%D0%9B%D1%83%D1%87%D0%B0%D0%BD%D0%B8+32240/@43.8602791,20.1365125,17z/data=!3m1!4b1!4m6!3m5!1s0x4757797787ebc16b:0x7b1a5953d9f902a0!8m2!3d43.8602791!4d20.1365125!16s%2Fg%2F11hcf49ndb?entry=ttu"> <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> jugoslovenske armije 5, Lučani</a></p>
+            <p> <a href="tel:+381325150600"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +381 32 51 50 600</a> </p>
+           <p> <a href="mailto:opstina.lucani@gmail.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> opstina.lucani@gmail.com</a></p>
+          </div>
+    
+        </div>
+    
+    </footer>
+
+
+</body>
+</html>

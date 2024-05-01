@@ -1,0 +1,379 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    overflow-x: hidden;
+
+}
+/*********************NAVIGACIJA***************************/
+  
+header{
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+  }
+  #hamburger{
+    position: absolute;
+    top: 3%;
+    right: 0;
+    padding: 1rem;
+    display: none;
+
+  }
+ 
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+.nav li{
+   list-style-type: none;
+    padding: 2rem;
+}
+
+.nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav li a:hover{
+    text-shadow: 3px 3px 8px white;
+}
+
+
+  /*********************NAVIGACIJA KRAJ***************************/
+
+
+.naslov{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.text{
+    font-size:1.5rem;
+    line-height: 2.5rem;
+    word-spacing: 0.3rem;
+    text-align: justify;
+}
+
+.container-strane{
+    max-width: 100vw;
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+
+}
+/*************************TEXT LEVO*******************************/
+.textlevo-container{
+
+    background-color: rgba(18, 94, 81, 0.726);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+}
+
+
+
+.slika1{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.slika1 img{
+    width: 100%;
+}
+.slika1::after{
+
+    content:attr(data-title);
+    background-color: rgba(2, 51, 32, 0.751);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+
+}
+.slika1:hover::after{
+    content:"";
+    background-color: rgba(0, 0, 0, 0);
+  
+  }
+  
+
+.slika2{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.slika2 img{
+    width: 100%;
+}
+.slika2::after{
+    
+    content:attr(data-title);
+    background-color: rgba(255, 255, 255, 0.599);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.slika2:hover::after{
+    content:"";
+    background-color: rgba(0, 0, 0, 0);
+  
+  }
+  
+
+.text-1{
+    width: 50%;
+
+}
+.text-1 p{
+    padding: 2rem;
+}
+/*************************TEXT DESNO*******************************/
+.textdesno-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+
+
+}
+.text-1:nth-child(odd){
+    color: white;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-div{
+    text-transform: uppercase;
+    text-align: left;
+}
+.footer-div p a i{
+    margin-right: 3%;
+}
+.footer-div p a{
+    color: white;
+    text-decoration: none;
+}
+
+.socials p {
+    padding: 0.7rem;
+}
+
+.kontakt-info p{
+    padding: 0.7rem;
+
+}
+
+.stranice{
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+.stranice ul li {
+    padding: 1.01rem;
+}
+
+
+
+/*******************MEDIA QUERY****************************************/
+@media screen and (max-width: 1200px) {
+    /*********************NAVIGACIJA***************************/
+  header{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    margin: 0 ;
+    position: absolute;
+    top: -500%;
+    z-index: 3;
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    transition: top 0.5s ease;
+
+  }
+
+  .prikazi {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    z-index: 3;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+#hamburger{
+    position: absolute;
+    top: 3%;
+    z-index: 4 ;
+    right: 0;
+    padding: 1rem;
+    display: block;
+
+  }
+
+
+}
+
+
+@media screen and  (max-width: 1200px) {
+    .textlevo-container {
+        flex-direction: column;
+     
+      }
+  
+      .textdesno-container {
+          flex-direction: column-reverse;
+       
+        }
+    
+
+  }
+
+  
+@media screen and  (max-width: 1200px) {
+    .container-strane{
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    /*************************TEXT LEVO*******************************/
+  
+    .slika1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .slika1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .slika1::after{
+        content:attr(data-title);
+        font-size: 3rem;
+    }
+    .slika1:hover::after{
+        content:"";
+        background-color: rgba(0, 0, 0, 0);
+      
+      }
+      
+    
+    .slika2{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .slika2 img{
+        width: 100%;
+    }
+    .slika2::after{
+        content:attr(data-title);
+        font-size: 3rem;
+    }
+    .slika2:hover::after{
+        content:"";
+        background-color: rgba(0, 0, 0, 0);
+      
+      }
+      
+    
+    .text-1{
+        width: 100%;
+    
+    }
+    .text-1 p{
+        padding: 2rem;
+    }
+   
+    
+
+  }
+
+  @media screen and (max-width:800px){
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+  
+  }
